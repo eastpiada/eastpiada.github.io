@@ -17,6 +17,7 @@
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^1.0.0",
 		"@sveltejs/kit": "^1.0.0",
+		"@types/node": "^18.11.18",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
@@ -32,8 +33,6 @@
 	"type": "module",
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^6.2.1",
-		"better-sqlite3": "^8.0.1",
-		"svelte-timeline": "^0.1.2",
 		"svelte-vertical-timeline": "^0.0.2"
 	}
 }
