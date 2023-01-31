@@ -23,7 +23,7 @@
         <div class="w3-quarter">
             <i class="fa-solid fa-skull-crossbones w3-margin-bottom w3-jumbo"></i>
             <p class="w3-large">Support</p>
-            <p>The Armada Alliance Telegram channel has the best support for Cardano stake pool operators running ARM. Many of the Armada Alliance OGs can be found helping out a newbie or discussing the details of the latest SPO call.</p>
+            <p>The <a href="https://t.me/armada_alli" rel="noreferrer" target="_blank">Armada Alliance Telegram</a> channel has the best support for Cardano stake pool operators running ARM. Many of the Armada Alliance OGs can be found helping out a newbie or discussing the details of the latest SPO call.</p>
         </div>
     </div>
 </div>
