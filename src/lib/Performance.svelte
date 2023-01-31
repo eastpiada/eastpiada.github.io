@@ -1,12 +1,16 @@
 
 <script>
-    import perfData from '$lib/data/data.json';
+    import perfData from '$lib/data/poolData.json';
 </script>
 
 <div class="w3-container" style="padding:64px 2px" id="performance">
     <div class="w3-row w3-center w3-green w3-padding-64">
         <div class="w3-col m2">
-            <span class="w3-xxlarge">{perfData.pledge}</span><br>
+            <span class="w3-xxlarge">{perfData.total_delegated}</span>&#8371;<br>
+            Pool Delegation
+        </div>
+        <div class="w3-col m2">
+            <span class="w3-xxlarge">{perfData.pledge}</span>&#8371;<br>
             Pool Pledge
         </div>
         <div class="w3-col m2">
@@ -22,8 +26,8 @@
             Low Variable Pool Fee
         </div>
         <div class="w3-col m2">
-            <span class="w3-xxlarge">{perfData.delegate_rewards}</span><br>
-            Lifetime ADA Rewards to Delegates
+            <span class="w3-xxlarge">{perfData.delegate_rewards}</span>&#8371;<br>
+            Lifetime Rewards to Delegates
         </div>
     </div>
 </div>
