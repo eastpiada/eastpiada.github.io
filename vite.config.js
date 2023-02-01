@@ -1,3 +1,4 @@
+import { defineConfig } from 'vite'
 import { sveltekit } from '@sveltejs/kit/vite';
 
 /** @type {import('vite').UserConfig} */
@@ -8,4 +9,7 @@ const config = {
 	}
 };
 
-export default config;
+export default defineConfig ({
+	base: "/eastpiada.github.io/",
+	plugins: [svelte()],
+});
