@@ -6,7 +6,7 @@
         "details": "Kicking around ideas on the Arming Cardano Telegram channel",
         "faIcon": "fa-handshake-simple",
         "faStyle": "color:rgb(205, 35, 85);",
-        "height": "150px"
+        "height": "160px"
     },
     {
         "url": "https://cardano.ideascale.com/c/idea/340480",
@@ -15,7 +15,7 @@
         "details": "Creating SPO content for ARM devices",
         "faIcon": "fa-lightbulb",
         "faStyle": "color:Navy;",
-        "height": "175px"
+        "height": "195px"
     },
     {
         "url": "https://cardanoscan.io/pool/b8d8742c7b7b512468448429c776b3b0f824cef460db61aa1d24bc65",
@@ -33,7 +33,7 @@
         "details": "Ouroboros rewards a new pool",
         "faIcon": "fa-cube",
         "faStyle": "color:Green;",
-        "height": "150px"
+        "height": "160px"
     },
     {
         "url": "https://www.youtube.com/watch?v=Py3Xy3ScVas",
@@ -51,7 +51,7 @@
         "details": "A group of ARM enthusiasts start a movement",
         "faIcon": "fa-skull-crossbones",
         "faStyle": "",
-        "height": "150px"
+        "height": "160px"
     },
     {
         "url": "",
@@ -60,7 +60,7 @@
         "details": "Putting the PIADA Raspberry Pis to the test",
         "faIcon": "fa-rocket",
         "faStyle": "color:rgb(72, 127, 255);",
-        "height": "150px"
+        "height": "160px"
     },
     {
         "url": "https://cardano.ideascale.com/c/idea/366924",
@@ -78,7 +78,7 @@
         "details": "Small hardware, big milestone",
         "faIcon": "fa-cube",
         "faStyle": "color:Green;",
-        "height": "150px"
+        "height": "160px"
     },
     {
         "url": "https://cardano.ideascale.com/c/idea/397744",
@@ -96,7 +96,7 @@
         "details": "Whale hello again",
         "faIcon": "fa-rocket",
         "faStyle": "color:rgb(72, 127, 255);",
-        "height": "150px"
+        "height": "160px"
     },
     {
         "url": "",
@@ -105,7 +105,7 @@
         "details": "Just two visionaries rubbing elbows",
         "faIcon": "fa-thumbs-up",
         "faStyle": "color:rgb(205, 35, 85);",
-        "height": "175px"
+        "height": "195px"
     },
     {
         "url": "https://forum.cardano.org/t/announcing-the-stake-pools-chosen-for-october-2022/109142/1",
@@ -114,7 +114,7 @@
         "details": "Testing new hardware and tweaking some automation",
         "faIcon": "fa-rocket",
         "faStyle": "color:rgb(72, 127, 255);",
-        "height": "150px"
+        "height": "195px"
     },
     {
         "url": "https://fiso.teddyswap.org/",
@@ -123,6 +123,6 @@
         "details": "Earn $TEDY tokens by delegating to PIADA",
         "faIcon": "fa-coins",
         "faStyle": "color:#8d6948;",
-        "height": "150px"
+        "height": "160px"
     }
 ]
