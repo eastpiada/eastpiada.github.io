@@ -4,6 +4,7 @@ import pandas as pd
 from dotenv import load_dotenv
 from github import Github
 load_dotenv()
+import os
 
 # Get our github api key from the file .env
 # Then check login to github
