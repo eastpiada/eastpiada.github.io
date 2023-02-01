@@ -26,7 +26,5 @@ jobs:
         run: python src/lib/data/pool_data.py
       - name: Commit and Push Changes
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
           git commit -m "updating poolData.json"
           git push origin master
