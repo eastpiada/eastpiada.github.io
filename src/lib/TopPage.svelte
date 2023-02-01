@@ -25,7 +25,7 @@
 </header>
 
 <style>
-  h1,h4,p {text-shadow:2px 2px 4px #000;}
+  h1,h4 {text-shadow:2px 2px 4px #000;}
   .rimage {
     background-position: center;
     background-size: cover;
