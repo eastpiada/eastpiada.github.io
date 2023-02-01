@@ -1,6 +1,23 @@
 import koios_python
 import json
 import pandas as pd
+from dotenv import load_dotenv
+from github import Github
+load_dotenv()
+
+# Get our github api key from the file .env
+# Then check login to github
+
+personal_access_token = os.getenv('PIADA_TOKEN')
+# using an access token
+g = Github(personal_access_token)
+
+# Check that we can access the github api and returns correct user
+try:   
+    user = g.get_user()
+    print(user.name)
+except ApiError as e:
+    print(e)
 
 # create a koios_python instance and set the network
 kp = koios_python.URLs(network='mainnet')
@@ -39,6 +56,16 @@ pool_data = dict(pledge=pledge, total_delegated=total_delegated, number_of_deleg
 # now lets convert the dictionary to a json file
 pool_data_json = json.dumps(pool_data)
 
-# now lets write the json file to a file
-with open("src/lib/data/poolData.json", "w") as outfile:
-    json.dump(pool_data, outfile)
+repo = "eastpiada/svelte-piada.io"
+path = "src/lib/data/poolData.json"
+
+
+repo = g.get_repo(repo)
+sha = repo.get_contents(path).sha
+repo.update_file(
+    path = path, 
+    message = "add new file", 
+    content = pool_data_json, 
+    branch = "master",
+    sha=sha
+)

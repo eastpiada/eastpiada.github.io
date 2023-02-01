@@ -23,6 +23,8 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
       - name: PoolData
+        env:
+          PIADA_TOKEN: ${{ secrets.PIADA_TOKEN }}
         run: python src/lib/data/pool_data.py
       - name: Commit and Push Changes
         run: |
