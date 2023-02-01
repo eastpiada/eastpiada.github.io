@@ -63,10 +63,11 @@ path = "src/lib/data/poolData.json"
 
 repo = g.get_repo(repo)
 sha = repo.get_contents(path).sha
-repo.update_file(
+update_data = repo.update_file(
     path = path, 
     message = "add new file", 
     content = pool_data_json, 
     branch = "master",
     sha=sha
 )
+print(update_data)
