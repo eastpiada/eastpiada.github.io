@@ -57,7 +57,7 @@ pool_data = dict(pledge=pledge, total_delegated=total_delegated, number_of_deleg
 # now lets convert the dictionary to a json file
 pool_data_json = json.dumps(pool_data)
 
-repo = "eastpiada/svelte-piada.io"
+repo = "eastpiada/eastpiada.github.io"
 path = "src/lib/data/poolData.json"
 
 
