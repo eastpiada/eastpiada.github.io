@@ -1,6 +1,7 @@
 <script>
   import '../app.css';
   import Copyright from 'svelte-copyright';
+	import Delegate from '$lib/Delegate.svelte';
   //let logoPic = "/images/piada-stake-pool-logo.png";
   let logoPic = "/images/raspberry-dots-small.png";
   let aaShip = "/images/ship-420.png";
@@ -53,8 +54,9 @@
 <slot />
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+<footer class="w3-center w3-black w3-padding-84">
+    <a href="#home" class="w3-button w3-light-grey w3-padding-large w3-large w3-margin-top"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <Delegate/>
     <div class="w3-xlarge w3-section">
       <span class="p-p3">&#960; &#43; &#8371; &#61; &#8766;</span>
       <a href="https://twitter.com/Piada_stakePool" rel="noreferrer" target="_blank"><i class="fa-brands fa-twitter w3-hover-opacity p-p3"></i></a>

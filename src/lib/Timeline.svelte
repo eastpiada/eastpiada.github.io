@@ -12,7 +12,6 @@
 </script>
 
 <div class="w3-container" style="padding:128px 2px" id="timeline">
-    <h2 class="w3-center" style="padding-bottom:20px;">OUR STORY</h2>
     <Timeline position="alternate">
         {#each storyData as sd}
         <TimelineItem>
