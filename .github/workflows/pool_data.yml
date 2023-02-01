@@ -3,9 +3,9 @@ on:
   schedule:
     - cron: '0 30 * * *'
   push: 
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
     
   workflow_dispatch:
 jobs:
@@ -29,4 +29,4 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git commit -m "updating poolData.json"
-          git push origin main
+          git push origin master
