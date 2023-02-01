@@ -34,10 +34,12 @@ pledge = "{:,}".format(pledge)
 delegate_rewards = "{:,}".format(delegate_rewards)
 total_delegated = "{:,}".format(total_delegated)
 
-# now lets get all this data into a json file from a dataframe
+# now lets get all this data above into a dictionary with keys as variable names and values as the variable values
+pool_data = dict(pledge=pledge, total_delegated=total_delegated, number_of_delegators=number_of_delegators, pool_fee=pool_fee, block_count=block_count, epoch=epoch, delegate_rewards=delegate_rewards, ten_epoch_ros=ten_epoch_ros)
 
-pool_data = pd.DataFrame({'pledge': [pledge], 'total_delegated': [total_delegated], 'number_of_delegators': [number_of_delegators], 
-                          'pool_fee': [pool_fee], 'block_count': [block_count], 'epoch': [epoch], 'delegate_rewards': [delegate_rewards], 
-                          'ten_epoch_ros': [ten_epoch_ros]})
+# now lets convert the dictionary to a json file
+pool_data_json = json.dumps(pool_data)
 
-pool_data.to_json('src/lib/data/poolData.json', orient='records')
+# now lets write the json file to a file
+with open("src/lib/data/poolData.json", "w") as outfile:
+    json.dump(pool_data, outfile)
