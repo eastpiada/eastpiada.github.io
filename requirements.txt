@@ -1,0 +1,2 @@
+pandas>1.4.1
+koios_python>=1.2.1

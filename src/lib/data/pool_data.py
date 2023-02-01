@@ -1,5 +1,4 @@
 import koios_python
-import os
 import json
 import pandas as pd
 
