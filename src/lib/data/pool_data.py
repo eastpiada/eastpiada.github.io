@@ -20,19 +20,19 @@ piada_history = pd.DataFrame(kp.get_pool_history(piada))
 piada_info = pd.DataFrame(kp.get_pool_info(piada))
 
 # Need pledge, live stake, live delegators, margin, block count, past 10 epoch ros, epoch_current then put it into a json file
-pledge = int(piada_info.pledge[0])/1000000
-total_delegated = int(piada_info.live_stake[0])/1000000
+pledge = round(int(piada_info.pledge[0])/1000000)
+total_delegated = round(int(piada_info.live_stake[0])/1000000)
 number_of_delegators = int(piada_info.live_delegators[0])
 pool_fee = int(piada_info.margin[0]) * 100
 block_count = int(piada_info.block_count[0])
 epoch = int(tip.epoch_no[0])
-delegate_rewards = piada_history.deleg_rewards.astype(int).sum() / 1000000
-ten_epoch_ros = piada_history.epoch_ros.astype(int).tail(10).mean()
+delegate_rewards = round((piada_history.deleg_rewards.astype(int) / 1000000).sum())
+ten_epoch_ros = round(piada_history.epoch_ros[0:9].mean(), 2)
 
 # lets make the some of the numbers look nice and convert to strings to look like this "80,000" without the ending .0
-pledge = "{:,}".format(pledge).replace('.', '')
-delegate_rewards = "{:,}".format(delegate_rewards).replace('.', '')
-total_delegated = "{:,}".format(total_delegated).replace('.', '')
+pledge = "{:,}".format(pledge)
+delegate_rewards = "{:,}".format(delegate_rewards)
+total_delegated = "{:,}".format(total_delegated)
 
 # now lets get all this data into a json file from a dataframe
 
@@ -40,4 +40,4 @@ pool_data = pd.DataFrame({'pledge': [pledge], 'total_delegated': [total_delegate
                           'pool_fee': [pool_fee], 'block_count': [block_count], 'epoch': [epoch], 'delegate_rewards': [delegate_rewards], 
                           'ten_epoch_ros': [ten_epoch_ros]})
 
-pool_data.to_json('poolData.json', orient='records')
+pool_data.to_json('src/lib/data/poolData.json', orient='records')
