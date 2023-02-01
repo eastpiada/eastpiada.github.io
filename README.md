@@ -1,3 +1,8 @@
+[![pages-build-deployment](https://github.com/eastpiada/eastpiada.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/eastpiada/eastpiada.github.io/actions/workflows/pages/pages-build-deployment)
+
+[![PoolData](https://github.com/eastpiada/eastpiada.github.io/actions/workflows/pool_data.yml/badge.svg)](https://github.com/eastpiada/eastpiada.github.io/actions/workflows/pool_data.yml)
+
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
