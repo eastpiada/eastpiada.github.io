@@ -1,5 +1,3 @@
-[![pages-build-deployment](https://github.com/eastpiada/eastpiada.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/eastpiada/eastpiada.github.io/actions/workflows/pages/pages-build-deployment)
-
 [![PoolData](https://github.com/eastpiada/eastpiada.github.io/actions/workflows/pool_data.yml/badge.svg)](https://github.com/eastpiada/eastpiada.github.io/actions/workflows/pool_data.yml)
 
 
