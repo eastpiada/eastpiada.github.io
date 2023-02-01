@@ -1,9 +1,1 @@
-{
-    "epoch": 390,
-    "pledge": "80,000",
-    "block_count": 742,
-    "ten_epoch_ros": 3.51,
-    "pool_fee": 1.50,
-    "delegate_rewards": "439,900",
-    "total_delegated": "413,734"
-}
+{"pledge": "80,000", "total_delegated": "1,226,672", "number_of_delegators": 125, "pool_fee": 1.5, "block_count": 748, "epoch": 391, "delegate_rewards": "443,635", "ten_epoch_ros": 2.78}
