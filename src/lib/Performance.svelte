@@ -1,7 +1,7 @@
 
 <script>
     import perfData from '$lib/data/poolData.json';
-    let teddy = "/images/logo-v-1.svg";
+    let teddy = "https://teddyswap.cardano-blockhouse.de/img/teddy-logo.svg";
 </script>
 
 <div class="w3-container" style="padding:64px 2px" id="performance">

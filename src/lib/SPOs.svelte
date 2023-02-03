@@ -8,7 +8,7 @@
         <div class="w3-display-container w3-quarter">
             &nbsp;
         </div>
-        <div class="w3-display-container w3-quarter">
+        <div class="w3-display-container w3-quarter" style="margin-bottom:40px;">
             <img src="{waelPic}" class="w3-image" alt="Wael" style="width:100%">
             <div class="w3-display-topleft w3-container w3-xlarge w3-black">Wael</div>
             <div class="w3-container">
